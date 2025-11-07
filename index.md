@@ -52,9 +52,6 @@
 
 * **プログラミング言語:** Python (PyTorch), C, Java
 * **開発・実験ツール:** Git, GitHub
-<!--
-* **その他:** [TOEIC 〇〇点], [〇〇（資格など）]
--->
   
 ---
 
@@ -80,7 +77,3 @@
 ## 🔗 リンク (Links)
 
 * **GitHub:** https://github.com/mu-daiki
-<!--
-* **[論文リスト (例: Google Scholar)]:** https://jisho.org/search/%E4%BB%BB%E6%84%8F
-* **[技術ブログ (例: Qiita)]:** https://jisho.org/search/%E4%BB%BB%E6%84%8F
--->
