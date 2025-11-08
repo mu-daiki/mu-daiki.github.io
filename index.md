@@ -46,12 +46,6 @@
 -->
 ---
 
-## スキル
-
-* **プログラミング言語:** Python (PyTorch), C, Java
-* **開発・実験ツール:** Git, GitHub
-
-
 ## 活動・学習実績
 * **「サマースクール2025 深層強化学習」修了**
   * **機関:** 東京大学大学院工学系研究科松尾・岩澤研究室
@@ -72,10 +66,15 @@
 * **概要:** ImageNetで事前訓練したMAEを用いて，DreamerV3において再構成を伴わない世界モデルの学習を行った.
 * **使用技術:** Python
 * **プロジェクト人数:** 3人
-* **GitHubリポジトリ:** <a href="https://github.com/mu-daiki/dreamerv3-torch-mae">
+* **GitHubリポジトリ:** [https://github.com/mu-daiki/dreamerv3-torch-mae](https://github.com/mu-daiki/dreamerv3-torch-mae)
 
 ---
 
+## スキル
+
+* **プログラミング言語:** Python (PyTorch), C, Java
+* **開発・実験ツール:** Git, GitHub
+
 ## 🔗 リンク (Links)
 
-* **GitHub:** <a href="https://github.com/mu-daiki">
+[GitHub](https://github.com/mu-daiki)
