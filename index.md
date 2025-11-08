@@ -56,7 +56,7 @@
 * **「サマースクール2025 深層強化学習」修了**
   * **機関:** 東京大学大学院工学系研究科松尾・岩澤研究室
   * **修了日:** 2025年10月
-  * **最終課題:** [視覚基盤モデルを用いた世界モデルの学習効率化](https://github.com/mu-daiki/dreamerv3-torch-mae)
+  * **最終課題:** [視覚基盤モデルを用いた世界モデルの学習効率化](#視覚基盤モデルを用いた世界モデルの学習効率化)
  
 * **「世界モデル2025」受講中**
   * **機関:** 東京大学大学院工学系研究科松尾・岩澤研究室
@@ -72,11 +72,10 @@
 * **概要:** ImageNetで事前訓練したMAEを用いて，DreamerV3において再構成を伴わない世界モデルの学習を行った.
 * **使用技術:** Python
 * **プロジェクト人数:** 3人
-* **GitHubリポジトリ:** https://github.com/mu-daiki/dreamerv3-torch-mae
-* 
-https://github.com/mu-daiki/dreamerv3-torch-mae
+* **GitHubリポジトリ:** <a href="https://github.com/mu-daiki/dreamerv3-torch-mae">
+
 ---
 
 ## 🔗 リンク (Links)
 
-* **GitHub:**  https://github.com/mu-daiki
+* **GitHub:** <a href="https://github.com/mu-daiki">
