@@ -61,6 +61,7 @@
 
 * **概要:** ImageNetで事前訓練したMAEを用いて，DreamerV3において再構成を伴わない世界モデルの学習を行った.
 * **使用技術:** Python
+* **プロジェクト人数:** 3人
 * **GitHubリポジトリ:** https://github.com/mu-daiki/dreamerv3-torch-mae
 <!--
 ### [プロジェクト名 2]
