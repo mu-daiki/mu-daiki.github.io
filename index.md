@@ -47,7 +47,7 @@
 
 ### 学会発表 (Presentations)
 
-* **[境界検出に基づく時間抽象化を用いた階層型世界モデル]**
+* **[境界検出に基づく時間抽象化を用いた階層型世界モデル](https://pub.confit.atlas.jp/ja/event/jsai2026/presentation/1E3-OS-39a-03)**
     * 2026年度 人工知能学会全国大会（第40回），口頭発表，June. 2026
     * https://pub.confit.atlas.jp/ja/event/jsai2026/presentation/1E3-OS-39a-03
 
