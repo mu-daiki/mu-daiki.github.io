@@ -84,7 +84,7 @@
 * **概要:** VTAとDreamerV3を組み合わせることで動的な時間抽象化を可能とした階層型世界モデルの学習．
 * **使用言語・技術:** Python，PyTorch
 * **プロジェクト人数:** 3人
-* **GitHubリポジトリ:** [https://github.com/Mainlst/stable-deep-world-model](https://github.com/Mainlst/stable-deep-world-model)]
+* **GitHubリポジトリ:** [https://github.com/Mainlst/stable-deep-world-model](https://github.com/Mainlst/stable-deep-world-model)
 * **発表学会:** 2026年度 人工知能学会全国大会（第40回）
 
 ---
