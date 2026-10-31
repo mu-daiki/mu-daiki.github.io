@@ -1,3 +1,10 @@
+# Daiki Murakawa
+
+**Affiliation:** University of Fukui, Japan  
+**Email:** [mf260821@g.u-fukui.ac.jp](mailto:mf260821@g.u-fukui.ac.jp)
+
+---
+
 ## 自己紹介
 はじめまして，私は大学で深層学習やAIについて研究しているdaiki murakawaです．
 
