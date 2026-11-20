@@ -1,33 +1,7 @@
-remote_theme: pages-themes/primer@v0.6.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-
-# -----------------------------------------------------------------
-# サイトの基本情報 (Primerテーマで使われます)
-# -----------------------------------------------------------------
-# サイトのタイトル (ブラウザのタブやヘッダーに表示されます)
-title: daiki murakawa
-
-# サイトの簡単な説明 (検索エンジン向けや、テーマによっては表示されます)
-description: mu-daikiのポートフォリオサイト
-
-# -----------------------------------------------------------------
-# オプション (必要に応じて)
-# -----------------------------------------------------------------
-# "View on GitHub" のリンクを非表示にする場合 (デフォルトは表示)
-# show_downloads: false
-
-# -----------------------------------------------------------------
-# Markdownエンジンの設定 (推奨)
-# -----------------------------------------------------------------
-# GitHub Pagesで標準のMarkdownエンジンを指定します
+title: "Daiki Murakawa | World Models & Reinforcement Learning"
+description: "Daiki Murakawa — AI researcher at the University of Fukui, studying world models, temporal abstraction, and visual representations."
+url: "https://mu-daiki.github.io"
+lang: ja
+markdown: kramdown
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
-
-# -----------------------------------------------------------------
-# 検索エンジンから除外する設定
-# -----------------------------------------------------------------
-# この設定により、Googleなどの検索結果に表示されなくなります
-jekyll-seo-tag:
-  robots: noindex
