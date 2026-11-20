@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f9fc">
-  <meta name="description" content="村川大規 (Daiki Murakawa) の研究者プロフィール．福井大学大学院工学研究科．世界モデルを用いたプランニング・制御タスクを中心に，モデルベース強化学習，長期予測，時間抽象化，視覚表現学習を研究．">
+  <meta name="theme-color" content="#ffffff">
   <meta name="author" content="Daiki Murakawa">
+  <meta name="description" content="村川 大規（Daiki Murakawa）．福井大学大学院工学研究科．世界モデルを用いたプランニング，制御，モデルベース強化学習に関する研究．">
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Daiki Murakawa | Planning & Control with World Models">
-  <meta property="og:description" content="Research on planning and control with world models, model-based reinforcement learning, and long-horizon prediction at the University of Fukui.">
+  <meta property="og:title" content="Daiki Murakawa | 村川 大規">
+  <meta property="og:description" content="Research on planning and control with world models at the University of Fukui.">
   <meta property="og:url" content="https://mu-daiki.github.io/">
   <meta name="twitter:card" content="summary">
   <link rel="canonical" href="https://mu-daiki.github.io/">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <title>Daiki Murakawa — Planning & Control with World Models</title>
+  <link rel="stylesheet" href="/assets/css/style.css?v=20261120">
+  <title>Daiki Murakawa | 村川 大規</title>
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -24,324 +24,135 @@
     "affiliation":{"@type":"CollegeOrUniversity","name":"University of Fukui"},
     "email":"mailto:mf260821@g.u-fukui.ac.jp",
     "sameAs":["https://github.com/mu-daiki"],
-    "knowsAbout":["Planning","Control","World Models","Model-Based Reinforcement Learning","Temporal Abstraction","Diffusion Models","Visual Representation Learning"]
+    "knowsAbout":["World Models","Planning","Control","Model-Based Reinforcement Learning","Temporal Abstraction","Visual Representations"]
   }
   </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">本文へスキップ</a>
+  <a class="skip-link" href="#main">本文へ移動</a>
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Daiki Murakawa トップページ">Daiki Murakawa<span class="brand-dot">.</span></a>
-      <nav class="nav" aria-label="メインナビゲーション">
-        <a href="#research">研究テーマ</a>
+    <div class="wrap header-inner">
+      <a class="site-name" href="#top">Daiki Murakawa</a>
+      <nav class="nav" aria-label="ページ内の移動">
+        <a href="#research">研究</a>
         <a href="#publications">研究発表</a>
         <a href="#projects">実装</a>
-        <a href="#about">プロフィール</a>
-        <a class="nav-contact" href="#contact">連絡先 <span aria-hidden="true">↗</span></a>
+        <a href="#background">経歴</a>
       </nav>
     </div>
   </header>
-  <main id="main">
-    <section class="container hero" id="top" aria-labelledby="hero-title">
-      <div>
-        <div class="eyebrow">Planning &amp; Control · Model-Based RL</div>
-        <h1 id="hero-title">Daiki <span class="surname">Murakawa<span class="brand-dot">.</span></span></h1>
-        <p class="name-jp">村川 大規</p>
-        <p class="hero-statement">Building <span class="accent">world models</span> for planning and control.</p>
-        <p class="hero-bio">福井大学大学院工学研究科で，世界モデルを用いたプランニングと制御タスクを中心に研究している．学習した環境のダイナミクスを将来予測に利用し，その予測を行動選択へ結び付けることに関心がある．これまでに，時間抽象化や視覚基盤モデル，拡散世界モデルにも取り組んできた．</p>
-        <div class="meta-row">
-          <span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 21V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16M2 21h20M9 7h2m2 0h2M9 11h2m2 0h2M10 21v-5h4v5"/></svg>
-            University of Fukui, Japan
-          </span>
-          <span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 4.5 6.2 4.5 9s-1.5 5.8-4.5 9c-3-3.2-4.5-6.2-4.5-9S9 6.2 12 3z"/></svg>
-            Planning · Control · World Models
-          </span>
-        </div>
-        <div class="button-row">
-          <a class="btn btn-primary" href="#research">
-            研究テーマを見る <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 14 0m-6-6 6 6-6 6"/></svg>
-          </a>
-          <a class="btn" href="https://github.com/mu-daiki" target="_blank" rel="noopener noreferrer">
-            GitHub <span aria-hidden="true">↗</span>
-          </a>
-          <a class="btn btn-quiet" href="mailto:mf260821@g.u-fukui.ac.jp">Email <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-      <div class="hero-art" aria-label="観測から世界モデルの学習，プランニング，制御に至る流れを示す概念図">
-        <div class="hero-glow"></div>
-        <div class="art-board">
-          <div class="art-top"><span>LEARN · PLAN · CONTROL</span><span class="art-top-dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
-          <div class="art-main">
-            <div class="art-unit">
-              <div class="art-node">
-                <svg viewBox="0 0 100 85" aria-hidden="true">
-                  <rect x="10" y="14" width="80" height="59" rx="10" fill="#edf4ff" stroke="#95b8ed" stroke-width="2"/>
-                  <path d="M16 61 37 42 52 55 68 33 85 57" stroke="#4378cc" stroke-width="5" stroke-linejoin="round" fill="none"/>
-                  <circle cx="68" cy="29" r="7" fill="#91cfd3"/>
-                </svg>
-              </div>
-              <span>Observe</span>
-            </div>
-            <div class="art-arrow" aria-hidden="true">→</div>
-            <div class="art-unit">
-              <div class="art-node">
-                <svg viewBox="0 0 100 85" aria-hidden="true">
-                  <path d="M25 18 72 23 49 58 25 18M25 18 18 65 49 58 76 62 72 23" stroke="#7298ca" stroke-width="3" fill="none"/>
-                  <circle cx="25" cy="18" r="10" fill="#9dc2fb"/><circle cx="72" cy="23" r="10" fill="#729fe0"/>
-                  <circle cx="49" cy="58" r="13" fill="#2859d9"/><circle cx="18" cy="65" r="7" fill="#77b8bc"/><circle cx="76" cy="62" r="8" fill="#8bb6dc"/>
-                </svg>
-              </div>
-              <span>Model</span>
-            </div>
-            <div class="art-arrow" aria-hidden="true">→</div>
-            <div class="art-unit">
-              <div class="art-node">
-                <svg viewBox="0 0 100 85" aria-hidden="true">
-                  <path d="M16 60 36 42 53 53 73 21M53 53l22 10" stroke="#72a2d8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                  <circle cx="16" cy="60" r="8" fill="#8fbedf"/><circle cx="36" cy="42" r="8" fill="#8fbedf"/>
-                  <circle cx="53" cy="53" r="9" fill="#5d89cd"/><circle cx="73" cy="21" r="11" fill="#2859d9"/><circle cx="75" cy="63" r="7" fill="#bbcedf"/>
-                </svg>
-              </div>
-              <span>Plan</span>
-            </div>
-            <div class="art-arrow" aria-hidden="true">→</div>
-            <div class="art-unit">
-              <div class="art-node">
-                <svg viewBox="0 0 100 85" aria-hidden="true">
-                  <rect x="13" y="18" width="74" height="49" rx="13" fill="#cfe5f5" stroke="#74aacb" stroke-width="2"/>
-                  <path d="M28 43h22m-11-11v22" stroke="#336eaa" stroke-width="5" stroke-linecap="round"/>
-                  <circle cx="68" cy="37" r="5" fill="#2f78b4"/><circle cx="76" cy="48" r="5" fill="#64a6c0"/>
-                </svg>
-              </div>
-              <span>Control</span>
-            </div>
-          </div>
-          <div class="art-foot" aria-hidden="true">
-            <span class="art-chip">observations</span>
-            <span class="art-chip">world dynamics</span>
-            <span class="art-chip">actions</span>
-          </div>
-          <div class="art-caption">Conceptual illustration</div>
-        </div>
+
+  <main class="wrap" id="main">
+    <section class="intro" id="top" aria-labelledby="page-title">
+      <p class="eyebrow">University of Fukui · Model-Based Reinforcement Learning</p>
+      <h1 id="page-title">村川 大規 <span>Daiki Murakawa</span></h1>
+      <p class="affiliation">福井大学大学院 工学研究科</p>
+      <p class="intro-description">世界モデルを用いたプランニングと制御タスクを中心に研究している．現在は，確率的な将来予測を行動計画に利用する方法や，予測モデルの計算量と意思決定の関係に関心がある．</p>
+      <p class="intro-description secondary">これまでに，時間抽象化を取り入れた階層型世界モデルや，視覚基盤モデルを利用した拡散世界モデルの学習に取り組んできた．</p>
+      <div class="inline-links">
+        <a href="mailto:mf260821@g.u-fukui.ac.jp">Email</a>
+        <a href="https://github.com/mu-daiki" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
-    <section class="section section-alt" id="research" aria-labelledby="research-title">
-      <div class="container">
-        <div class="section-heading">
-          <div><div class="section-kicker">01 / Research Focus</div><h2 id="research-title">研究テーマ<span class="brand-dot">.</span></h2></div>
-          <p>現在の中心はプランニングと制御タスク．世界モデルの予測を，実際の意思決定につなげることを目指している．</p>
-        </div>
-        <div class="topic-grid">
-          <article class="topic-card topic-card-current">
-            <div class="topic-num">01 — CURRENT FOCUS <span class="focus-badge">現在の中心テーマ</span></div>
-            <div class="topic-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="5" cy="17" r="2"/><circle cx="13" cy="11" r="2"/><circle cx="19" cy="5" r="2"/><path d="m7 16 4-4m4-2 2.5-3M3 5h6M3 9h4"/></svg>
-            </div>
-            <h3>Planning &amp; Control</h3>
-            <p>世界モデルが予測する将来状態を利用し，行動計画と制御タスクへ結び付ける方法を研究している．</p>
-          </article>
-          <article class="topic-card">
-            <span class="topic-num">02 — DYNAMICS</span>
-            <div class="topic-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 18h18M4 7h4v6H4zM10 4h4v9h-4zM16 9h4v4h-4zM6 13v5m6-5v5m6-5v5"/></svg>
-            </div>
-            <h3>World Models &amp; Temporal Abstraction</h3>
-            <p>状態遷移の学習と長期予測に加え，時間抽象化によって意思決定に役立つダイナミクスを捉える方法を探究する．</p>
-          </article>
-          <article class="topic-card">
-            <span class="topic-num">03 — REPRESENTATION</span>
-            <div class="topic-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="8" cy="9" r="2"/><path d="m4 17 5-5 3 3 4-5 5 6"/></svg>
-            </div>
-            <h3>Visual Representation &amp; Diffusion</h3>
-            <p>視覚基盤モデルの特徴表現や拡散モデルを活用し，効率的な将来予測と世界モデルの学習を検討する．</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="publications" aria-labelledby="publication-title">
-      <div class="container">
-        <div class="section-heading">
-          <div><div class="section-kicker">02 / Publications &amp; Presentations</div><h2 id="publication-title">研究発表<span class="brand-dot">.</span></h2></div>
-          <p>発表済みの研究成果を時系列で掲載する．論文本文・公式抄録・コードへのリンクをまとめている．</p>
-        </div>
-        <div class="research-list">
-          <article class="paper">
-            <div class="paper-figure">
-              <span class="figure-label">Visual priors × diffusion</span>
-              <svg class="diffusion-vis" viewBox="0 0 360 175" role="img" aria-label="視覚特徴と拡散モデルの中間表現を整合させる概念図">
-                <defs>
-                  <linearGradient id="featureFill" x1="0" x2="1"><stop offset="0" stop-color="#84b3f1"/><stop offset="1" stop-color="#5a81c5"/></linearGradient>
-                  <linearGradient id="diffFill" x1="0" x2="1"><stop offset="0" stop-color="#86d1c6"/><stop offset="1" stop-color="#4b9baf"/></linearGradient>
-                </defs>
-                <rect x="14" y="17" width="93" height="112" rx="13" fill="#fff" stroke="#c5d8ed" stroke-width="2"/>
-                <rect x="27" y="31" width="67" height="58" rx="7" fill="#e1ebfd"/>
-                <path d="m30 76 19-23 15 15 12-13 16 21" fill="none" stroke="#5d8fcb" stroke-width="5" stroke-linejoin="round"/>
-                <circle cx="77" cy="45" r="6" fill="#87c7d8"/>
-                <text x="60" y="108" text-anchor="middle" font-size="10" fill="#607895" font-weight="700">Observation</text>
-                <path d="M111 57h31" stroke="#638fc9" stroke-width="2.5" stroke-linecap="round"/><path d="m136 51 7 6-7 6" fill="none" stroke="#638fc9" stroke-width="2.5"/>
-                <rect x="152" y="18" width="94" height="49" rx="10" fill="url(#featureFill)"/>
-                <text x="199" y="38" text-anchor="middle" font-size="11" font-weight="750" fill="#fff">Visual</text>
-                <text x="199" y="52" text-anchor="middle" font-size="11" font-weight="750" fill="#fff">features</text>
-                <rect x="152" y="92" width="94" height="49" rx="10" fill="url(#diffFill)"/>
-                <text x="199" y="113" text-anchor="middle" font-size="11" font-weight="750" fill="#fff">Diffusion</text>
-                <text x="199" y="127" text-anchor="middle" font-size="11" font-weight="750" fill="#fff">features</text>
-                <path d="M199 69v19" stroke="#457cba" stroke-width="2" stroke-dasharray="4 3"/><path d="m194 83 5 6 5-6" fill="none" stroke="#457cba" stroke-width="2"/>
-                <path d="M252 116h24V71h17" fill="none" stroke="#5c92a8" stroke-width="2.5"/><path d="m287 65 7 6-7 6" fill="none" stroke="#5c92a8" stroke-width="2.5"/>
-                <rect x="300" y="43" width="46" height="60" rx="8" fill="#fff" stroke="#a9cddd" stroke-width="2"/>
-                <rect x="309" y="51" width="28" height="43" rx="5" fill="#a1cad8" opacity=".7"/>
-                <path d="m313 83 9-14 9 8" fill="none" stroke="#46889e" stroke-width="3"/>
-                <text x="324" y="119" text-anchor="middle" font-size="10" fill="#607895" font-weight="700">Future</text>
-                <text x="199" y="163" text-anchor="middle" font-size="10" fill="#62809c">Representation alignment</text>
-              </svg>
-              <span class="figure-note">概念図 / Illustration</span>
-            </div>
-            <div class="paper-body">
-              <div class="paper-top"><span class="venue-pill">DICOMO 2026 · 国内会議発表</span><span class="paper-year">June 2026</span></div>
-              <h3>視覚基盤モデルに基づく拡散世界モデルの効率的な訓練手法の構築</h3>
-              <p class="paper-authors"><strong>村川 大規</strong>，坂井 俊介，長谷川 達人</p>
-              <p class="paper-detail">DICOMO 2026 · セッション 8H-3「視覚AI」 · pp. 2286–2300 · 2026年6月26日</p>
-              <p class="paper-summary">事前学習済みの視覚基盤モデルから得られる特徴と，拡散世界モデルの中間表現を整合させ，行動条件付きの将来観測生成の学習を補助する手法を提案した．</p>
-              <div class="link-row">
-                <a class="link-pill" href="https://tsys.jp/dicomo/2026/program/program_abst.html" target="_blank" rel="noopener noreferrer">公式抄録・プログラム <span aria-hidden="true">↗</span></a>
-              </div>
-            </div>
-          </article>
-
-          <article class="paper">
-            <div class="paper-figure is-hierarchical">
-              <span class="figure-label">Temporal abstraction × DreamerV3</span>
-              <svg class="hierarchy-vis" viewBox="0 0 360 175" role="img" aria-label="階層的な時間抽象化を表した概念図">
-                <text x="16" y="36" font-size="11" font-weight="700" fill="#6983a4">Abstract states</text>
-                <text x="16" y="105" font-size="11" font-weight="700" fill="#6983a4">Time steps</text>
-                <rect x="114" y="13" width="107" height="43" rx="10" fill="#7a8bd4"/>
-                <rect x="227" y="13" width="119" height="43" rx="10" fill="#4b78ca"/>
-                <text x="167" y="38" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">Segment A</text>
-                <text x="286" y="38" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">Segment B</text>
-                <path d="M114 62v21M221 62v21M346 62v21" stroke="#8a9dc0" stroke-width="1.8" stroke-dasharray="4 4"/>
-                <path d="M113 91h232" stroke="#9db4dc" stroke-width="2"/>
-                <g fill="#fff" stroke="#7ba0d4" stroke-width="2">
-                  <circle cx="115" cy="91" r="10"/><circle cx="146" cy="91" r="10"/><circle cx="177" cy="91" r="10"/><circle cx="208" cy="91" r="10"/>
-                  <circle cx="239" cy="91" r="10"/><circle cx="270" cy="91" r="10"/><circle cx="301" cy="91" r="10"/><circle cx="332" cy="91" r="10"/>
-                </g>
-                <circle cx="115" cy="91" r="5" fill="#486ac1"/><circle cx="239" cy="91" r="5" fill="#486ac1"/>
-                <text x="115" y="120" text-anchor="middle" font-size="10" fill="#597491">t₁</text>
-                <text x="239" y="120" text-anchor="middle" font-size="10" fill="#597491">t₅</text>
-                <path d="M115 125v17m0 0h124m0-17v17" fill="none" stroke="#648ec8" stroke-width="2"/>
-                <text x="177" y="157" text-anchor="middle" font-size="10" fill="#6480a9">Adaptive boundary</text>
-              </svg>
-              <span class="figure-note">概念図 / Illustration</span>
-            </div>
-            <div class="paper-body">
-              <div class="paper-top"><span class="venue-pill">JSAI 2026 · 国内会議発表</span><span class="paper-year">June 2026</span></div>
-              <h3>境界検出に基づく時間抽象化を用いた階層型世界モデル</h3>
-              <p class="paper-authors"><strong>村川 大規</strong>，屋藤 翔麻，坂井 俊介，長谷川 達人，鈴木 雅大，松尾 豊</p>
-              <p class="paper-detail">2026年度 人工知能学会全国大会（第40回） · 1E3-OS-39a-03 · DOI: 10.11517/pjsai.JSAI2026.0_1E3OS39a03</p>
-              <p class="paper-summary">VTAの適応的な境界検出をDreamerV3に統合し，Atari 100kで検証．構造的変化を捉える状態表現を確認した一方，累積報酬はベースラインを上回らず，階層方策の課題が明らかになった．</p>
-              <div class="link-row">
-                <a class="link-pill" href="https://doi.org/10.11517/pjsai.JSAI2026.0_1E3OS39a03" target="_blank" rel="noopener noreferrer">論文・DOI <span aria-hidden="true">↗</span></a>
-                <a class="link-pill" href="https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_1E3OS39a03/_pdf/-char/ja" target="_blank" rel="noopener noreferrer">PDF <span aria-hidden="true">↗</span></a>
-                <a class="link-pill" href="https://github.com/Mainlst/stable-deep-world-model" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
-              </div>
-            </div>
-          </article>
-        </div>
-        <p class="publication-note">DICOMO 2026の本文PDFは再配布していない．公式プログラムを参照できる．図は研究を説明するための概念図であり，論文中の実験結果ではない．</p>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="projects" aria-labelledby="projects-title">
-      <div class="container">
-        <div class="section-heading">
-          <div><div class="section-kicker">03 / Selected Projects</div><h2 id="projects-title">研究プロジェクト<span class="brand-dot">.</span></h2></div>
-          <p>現在取り組んでいるプランニング・制御関連の実装を先頭に，これまでの世界モデル研究を紹介する．</p>
-        </div>
-        <div class="project-grid">
-          <article class="project-card project-card-featured">
-            <div class="project-line"><span>PLANNING / CONTROL / STOCHASTIC WORLD MODELS</span><span class="focus-badge">現在の研究</span></div>
-            <h3>State-Centered Stochastic World Models</h3>
-            <p>状態遷移を予測する確率的な世界モデルについて，生成過程の設計とプランニングへの活用を検討している．公開リポジトリでは，少ない生成ステップ数での将来予測に加え，MiniGrid PursuitやHighway Intersectionなどの予測・プランニング・制御の実験を扱っている．</p>
-            <p class="project-result">研究用実装：比較実験，設定ファイル，再現手順と数値結果を公開．未発表の性能改善や採択実績は主張しない．</p>
-            <div class="tags"><span class="tag">Planning</span><span class="tag">Control</span><span class="tag">Stochastic World Models</span><span class="tag">PyTorch</span></div>
-            <a class="project-link" href="https://github.com/mu-daiki/low-nfe-world-models" target="_blank" rel="noopener noreferrer">GitHub repository <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="project-card">
-            <div class="project-line"><span>EXPERIMENT / REPRESENTATION LEARNING</span><span class="project-arrow" aria-hidden="true">↗</span></div>
-            <h3>Visual Priors for World Model Learning</h3>
-            <p>ImageNetで事前学習したMAEをDreamerV3のエンコーダとして利用する実験．観測再構成に依存しない世界モデル学習の可能性を検証した．</p>
-            <p class="project-result">検証結果：DMC Walkerでは標準のDreamerV3より性能が低下し，制御に必要な局所的な姿勢情報を保持する難しさが示された．</p>
-            <div class="tags"><span class="tag">PyTorch</span><span class="tag">MAE</span><span class="tag">DreamerV3</span></div>
-            <a class="project-link" href="https://github.com/mu-daiki/dreamerv3-torch-mae" target="_blank" rel="noopener noreferrer">GitHub repository <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="project-card">
-            <div class="project-line"><span>IMPLEMENTATION / TEMPORAL ABSTRACTION</span><span class="project-arrow" aria-hidden="true">↗</span></div>
-            <h3>VTA × DreamerV3</h3>
-            <p>世界モデル内の時間抽象化を検討するための実装．DreamerV3を基盤に，VTAに関連する階層構造や境界検出の実装・実験に取り組んだ．</p>
-            <p class="project-result">関連研究：JSAI 2026「境界検出に基づく時間抽象化を用いた階層型世界モデル」．</p>
-            <div class="tags"><span class="tag">PyTorch</span><span class="tag">Temporal Abstraction</span><span class="tag">World Models</span></div>
-            <a class="project-link" href="https://github.com/mu-daiki/vta-dreamerv3" target="_blank" rel="noopener noreferrer">GitHub repository <span aria-hidden="true">↗</span></a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="container about-grid">
+    <section class="section" id="research" aria-labelledby="research-title">
+      <h2 id="research-title">研究</h2>
+      <p class="section-intro">世界モデルを学習し，その予測を行動選択に使う方法を考えている．主に次のテーマに取り組んでいる．</p>
+      <dl class="topic-list">
         <div>
-          <div class="section-kicker">04 / Profile</div>
-          <h2 class="section-title" id="about-title">プロフィール<span class="brand-dot">.</span></h2>
-          <p class="about-lead">現在は世界モデルを用いたプランニングと制御タスクを研究の中心に置いている．</p>
-          <p class="about-copy">モデルベース強化学習において，環境のダイナミクスを適切に捉え，その予測を行動計画に利用することを重視している．これまでに，時間抽象化を用いた階層型世界モデルや，MAEなどの視覚表現，拡散世界モデルの学習手法も研究してきた．</p>
-          <p class="about-copy">関連分野として，Slot Attentionなどの物体中心表現を世界モデルに活用する方法にも関心がある．</p>
-          <div class="skill-list" aria-label="Skills">
-            <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">Deep Reinforcement Learning</span><span class="tag">C</span><span class="tag">Java</span>
-          </div>
+          <dt>プランニング・制御</dt>
+          <dd>将来状態の予測に基づく行動計画と制御．MiniGridやHighwayなどの環境を使い，確率的な状態遷移の予測と意思決定を評価している．</dd>
         </div>
-        <div class="info-card">
-          <h3>Education &amp; Training</h3>
-          <div class="timeline">
-            <div class="timeline-item">
-              <span class="timeline-time">Present</span>
-              <strong>福井大学大学院 工学研究科</strong>
-              <p>世界モデル・モデルベース強化学習に関する研究</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-time">March 2026</span>
-              <strong>「世界モデル2025」修了</strong>
-              <p>東京大学 松尾・岩澤研究室 主催プログラム</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-time">October 2025</span>
-              <strong>「サマースクール2025 深層強化学習」修了</strong>
-              <p>東京大学 松尾・岩澤研究室 主催プログラム</p>
-            </div>
-          </div>
+        <div>
+          <dt>世界モデル・時間抽象化</dt>
+          <dd>DreamerV3や階層型世界モデルを対象に，状態遷移と長期的な依存関係の表現を調べている．</dd>
         </div>
+        <div>
+          <dt>視覚表現・拡散モデル</dt>
+          <dd>MAEやDINOv2などの視覚特徴を利用した世界モデルの学習と，拡散モデルによる将来観測生成に取り組んできた．</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section" id="publications" aria-labelledby="publications-title">
+      <h2 id="publications-title">研究発表</h2>
+      <p class="section-intro">これまでに発表した研究を新しい順に掲載する．</p>
+
+      <article class="publication" aria-labelledby="dicomo-title">
+        <p class="pub-meta">DICOMO 2026 · 国内会議発表</p>
+        <h3 id="dicomo-title">視覚基盤モデルに基づく拡散世界モデルの効率的な訓練手法の構築</h3>
+        <p class="authors"><strong>村川 大規</strong>，坂井 俊介，長谷川 達人</p>
+        <p class="details">DICOMO 2026，pp. 2286–2300，2026年6月26日</p>
+        <p>拡散世界モデルの中間特徴と事前学習済み視覚基盤モデルの特徴を整合させ，行動条件付きの将来観測生成を学習する手法を検討した．</p>
+        <p class="pub-links">
+          <a href="https://tsys.jp/dicomo/2026/program/program_abst.html" target="_blank" rel="noopener noreferrer">公式プログラム・抄録 ↗</a>
+        </p>
+        <figure class="research-figure" data-figure="dicomo">
+          <a href="/assets/img/dicomo-figure.webp" target="_blank" rel="noopener noreferrer" aria-label="DICOMO 2026で使用した研究図を拡大">
+            <img src="/assets/img/dicomo-figure.webp" alt="DICOMO 2026の研究図．従来の逐次拡散Transformerと視覚基盤モデルによる表現整合を取り入れた提案手法を比較している．" width="1294" height="614" loading="lazy" decoding="async">
+          </a>
+        </figure>
+      </article>
+
+      <article class="publication" aria-labelledby="jsai-title">
+        <p class="pub-meta">JSAI 2026 · 国内会議発表</p>
+        <h3 id="jsai-title">境界検出に基づく時間抽象化を用いた階層型世界モデル</h3>
+        <p class="authors"><strong>村川 大規</strong>，屋藤 翔麻，坂井 俊介，長谷川 達人，鈴木 雅大，松尾 豊</p>
+        <p class="details">2026年度人工知能学会全国大会（第40回），1E3-OS-39a-03</p>
+        <p>Variational Temporal Abstraction（VTA）をDreamerV3に組み込み，観測から時間的な境界を学習する階層型世界モデルを検討した．Atari 100kで状態表現と制御性能を評価した．</p>
+        <p class="pub-links">
+          <a href="https://doi.org/10.11517/pjsai.JSAI2026.0_1E3OS39a03" target="_blank" rel="noopener noreferrer">論文 ↗</a>
+          <a href="https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_1E3OS39a03/_pdf/-char/ja" target="_blank" rel="noopener noreferrer">PDF ↗</a>
+          <a href="https://github.com/Mainlst/stable-deep-world-model" target="_blank" rel="noopener noreferrer">Code ↗</a>
+        </p>
+        <figure class="research-figure" data-figure="vta">
+          <a href="/assets/img/vta-dreamerv3-figure.webp" target="_blank" rel="noopener noreferrer" aria-label="JSAI 2026で使用した提案手法の図を拡大">
+            <img src="/assets/img/vta-dreamerv3-figure.webp" alt="VTAとDreamerV3の研究図．従来のDreamerV3と，時間抽象化による潜在状態を導入した提案手法の状態遷移を比較している．" width="1216" height="490" loading="lazy" decoding="async">
+          </a>
+        </figure>
+      </article>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">実装・プロジェクト</h2>
+      <div class="project">
+        <h3><a href="https://github.com/mu-daiki/low-nfe-world-models" target="_blank" rel="noopener noreferrer">State-Centered Stochastic World Models ↗</a></h3>
+        <p>確率的世界モデルの生成過程を設計し，少ない生成ステップ数での予測やプランニングへの利用を検証している．MiniGrid PursuitとHighway Intersectionを含む実験コードを公開している．</p>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/mu-daiki/dreamerv3-torch-mae" target="_blank" rel="noopener noreferrer">MAE × DreamerV3 ↗</a></h3>
+        <p>ImageNetで事前学習したMAEをDreamerV3の観測エンコーダに利用する実験．DMC Walkerで評価した．</p>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/mu-daiki/vta-dreamerv3" target="_blank" rel="noopener noreferrer">VTA × DreamerV3 ↗</a></h3>
+        <p>境界検出を用いた時間抽象化とDreamerV3の組み合わせに関する実装．</p>
       </div>
     </section>
 
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="container contact-inner">
-        <div>
-          <div class="section-kicker">05 / Contact</div>
-          <h2 id="contact-title">連絡先<span style="color:#80b5ff">.</span></h2>
-          <p>研究内容，共同研究，実装に関するお問い合わせはメールへ．ソースコードや関連プロジェクトはGitHubで公開している．</p>
-        </div>
-        <a class="btn" href="mailto:mf260821@g.u-fukui.ac.jp">mf260821@g.u-fukui.ac.jp <span aria-hidden="true">↗</span></a>
+    <section class="section" id="background" aria-labelledby="background-title">
+      <h2 id="background-title">経歴・その他</h2>
+      <div class="timeline">
+        <div><time>現在</time><p>福井大学大学院 工学研究科</p></div>
+        <div><time>2026年3月</time><p>「世界モデル2025」修了（東京大学 松尾・岩澤研究室）</p></div>
+        <div><time>2025年10月</time><p>「サマースクール2025 深層強化学習」修了（東京大学 松尾・岩澤研究室）</p></div>
       </div>
+      <p class="skills">使用言語・ライブラリ：Python，PyTorch，C，Java</p>
     </section>
+
+    <footer class="footer">
+      <p>Daiki Murakawa · <a href="mailto:mf260821@g.u-fukui.ac.jp">mf260821@g.u-fukui.ac.jp</a> · <a href="https://github.com/mu-daiki" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    </footer>
   </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span>© 2026 Daiki Murakawa · University of Fukui</span>
-      <span><a href="https://github.com/mu-daiki" target="_blank" rel="noopener noreferrer">GitHub ↗</a> &nbsp; · &nbsp; Built with GitHub Pages</span>
-    </div>
-  </footer>
+  <script>
+    // Uploaded figures are displayed only after their assets are available.
+    document.querySelectorAll(".research-figure").forEach(function (figure) {
+      var img = figure.querySelector("img");
+      if (!img) return;
+      img.addEventListener("error", function () {
+        figure.hidden = true;
+      }, { once: true });
+      if (img.complete && img.naturalWidth === 0) figure.hidden = true;
+    });
+  </script>
 </body>
 </html>
